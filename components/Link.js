@@ -5,9 +5,7 @@ import { colorsMain } from "../utilis";
 const Link = ({ title, fontSize, align, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <Text style={styles.link(fontSize, align)}>
-        {JSON.stringify(onPress)} {title}
-      </Text>
+      <Text style={styles.link(fontSize, align)}>{title}</Text>
       {/* <Text style={styles.link(fontSize, align)}>{title}</Text> */}
     </TouchableOpacity>
   );

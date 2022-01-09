@@ -7,7 +7,6 @@ import { useForm, Controller } from "react-hook-form";
 import { useStoreUser } from "../store/user";
 import { useMutation } from "react-query";
 import Loading from "../components/Loading";
-import Input from "../components/Input";
 
 const Register = ({ navigation }) => {
   const {

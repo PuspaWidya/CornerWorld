@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { colorsMain } from "../utilis";
 import { TrashIcon } from "react-native-heroicons/outline";
-import { useMutation, useQuery, queryClient } from "react-query";
+import { useMutation } from "react-query";
 import { useStoreTodo } from "../store";
 
 export default function Task(props) {
