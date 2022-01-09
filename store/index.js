@@ -11,16 +11,10 @@ const useStoreTodo = create((set) => ({
   },
 
   deleteTodos: async (idTodo) => {
-    await axios
-      .delete(`${url}/${idTodo}`)
-      .then((data) => {
-        set((state) => ({
-          todos: state.todos.filter((todo, id) => id !== idTodo),
-        }));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    await axios.delete(`${url}/${idTodo}`);
+    set((state) => ({
+      todos: state.todos.filter((todo) => todo.id !== idTodo),
+    }));
   },
 
   addTodo: async (form) => {

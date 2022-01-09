@@ -13,7 +13,7 @@ import { colorsMain } from "../utilis";
 export default function HomeScreen({ navigation }) {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace("Todo");
+      navigation.replace("GetStarted");
     }, 3000);
   }, []);
 
@@ -25,7 +25,6 @@ export default function HomeScreen({ navigation }) {
         resizeMode="cover"
         style={styles.image}
       >
-        {/* <Text style={styles.text}>WELLCOME</Text> */}
         <Text style={styles.text}>Take a breath, Inhale peace</Text>
       </ImageBackground>
     </View>

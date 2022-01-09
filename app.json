@@ -3,6 +3,8 @@
     "name": "CornerWorld",
     "slug": "CornerWorld",
     "version": "1.0.0",
+    "description": "Basic Firebase Login",
+    "githubUrl": "https://github.com/popeating/FirebaseLogin",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -13,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -27,6 +27,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "IOS_KEY": "",
+      "ANDROID_KEY": "",
+      "API_KEY": "",
+      "AUTH_DOMAIN": "",
+      "DATABASE_URL": "",
+      "PROJECT_ID": "",
+      "STORAGE_BUCKET": "",
+      "MESSAGE_SENDER_ID": "",
+      "APP_ID": ""
     }
   }
 }

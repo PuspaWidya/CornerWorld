@@ -9,10 +9,6 @@ export default function Task(props) {
   const deleteTodo = useStoreTodo((state) => state.deleteTodos);
   const editTodo = useStoreTodo((state) => state.editTodo);
 
-  const deleteTodos = (id) => {
-    deleteTodo(id);
-  };
-
   //edit todo
   const onChangeStatus = (id) => {
     editMutate(id);
@@ -45,7 +41,7 @@ export default function Task(props) {
         </Text>
       </View>
       <View style={styles.edit.todo}>
-        <TouchableOpacity onPress={() => deleteTodos(props?.text.id)}>
+        <TouchableOpacity onPress={() => deleteTodo(props?.text.id)}>
           <TrashIcon color="green" size={20} style={{ margin: 5 }} />
         </TouchableOpacity>
       </View>
@@ -61,7 +57,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-
     marginBottom: 20,
   },
   itemLeft: {

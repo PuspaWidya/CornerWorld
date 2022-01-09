@@ -21,13 +21,7 @@ export default function Todo() {
   const addTodo = useStoreTodo((state) => state.addTodo);
 
   //create todo
-  const {
-    control,
-    handleSubmit,
-    // formState: { errors },
-    // register,
-    // clearErrors,
-  } = useForm();
+  const { control, handleSubmit } = useForm();
 
   const onSubmit = (newData) => {
     mutate({ ...newData, finished: false });
